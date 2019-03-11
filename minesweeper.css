@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif
+  font-family: 'Open Sans', sans-serif;
+  background-color: rgb(100, 228, 168)
 }
 
 body {
@@ -10,6 +11,11 @@ body {
   flex-direction: column;
 }
 
+h1 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
+}
 #message, #notes {
   display: flex;
   flex-direction: column;
@@ -17,7 +23,8 @@ body {
 }
 
 #message {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  color: rgb(0, 171, 114);
 }
 
 .board {
@@ -40,11 +47,11 @@ body {
 }
 
 .board div:hover {
-  background-color: white;
+  background-color: rgb(185, 245, 231);
 }
 
 div.mine, div.mine:hover {
-  background: no-repeat center/60% url("images/bomb.svg") crimson;
+  background: no-repeat center/60% url("images/bomb.svg") rgb(220, 107, 20);
 }
 
 div.hidden {
@@ -56,5 +63,5 @@ div.hidden:hover {
 }
 
 div.marked, div.marked:hover {
-  background: no-repeat center/60% url("images/mark.svg") deepskyblue;
+  background: no-repeat center/60% url("images/mark.svg") rgb(0, 51, 255);
 }
